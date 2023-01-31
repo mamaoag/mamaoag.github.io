@@ -35,36 +35,17 @@
       </a>
       <div class="connect mt-8">
         <h3 class="text-lg tracking-[3.5%]">Connect Via:</h3>
-        <ul class="relative mt-2">
-          <li class="inline-block mr-2">
-            <a
-              href=""
-              target="_blank"
-              class="text-2xl hover:text-yellow-300 transition-colors ease-in"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="inline-block mx-2">
-            <a
-              href=""
-              target="_blank"
-              class="text-2xl hover:text-yellow-300 transition-colors ease-in"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li class="inline-block mx-2">
-            <a
-              href=""
-              target="_blank"
-              class="text-2xl hover:text-yellow-300 transition-colors ease-inl"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-        </ul>
+        <SocialBlock />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+  import SocialBlock from '../SocialBlock';
+  export default {
+    components: {
+      SocialBlock
+    }
+  }
+</script>

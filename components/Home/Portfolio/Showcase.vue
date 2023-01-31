@@ -1,6 +1,6 @@
 <template>
   <a :href="project.url" class="group relative">
-    <div class="p-2 block lg:flex mt-4 lg:h-[254px]">
+    <div class="p-2 block lg:flex mt-4 lg:h-[254px] ease-in transition">
       <div
         class="border-2 border-black p-2 lg:rotate-180 lg:[writing-mode:_vertical-lr] group-hover:hidden"
       >
@@ -9,7 +9,7 @@
           {{ project.title }}
         </h5>
       </div>
-      <div class="w-full lg:w-[549px]">
+      <div class="w-full lg:w-[549px] transition ease-in">
         <img
           :src="project.img"
           alt=""
